@@ -3,7 +3,7 @@
 Two linked deliverables that tell the story of what a **Cultural Arts Center (museum) concession** would add to Allen Street Mall, measured against the **food truck** concession it would replace.
 
 1. **A storytelling app** (311 Wrapped style) that turns 311 service-request data into a scroll-driven, slide-by-slide narrative about the neighborhood. Reference: https://311wrapped.com/
-2. **A notebook series** (Jupyter, Python) that builds the model behind the story: baseline (food trucks) vs. proposal (Cultural Arts Center), measured as incremental value on social capital, cultural capital, and revenue, with revenue benchmarked against food truck revenue.
+2. **A model** (Jupyter, Python) that measures the difference between the baseline (food trucks) and the proposal (Cultural Arts Center) as incremental value on social capital, cultural capital, and revenue, with revenue benchmarked against food truck revenue.
 
 ---
 
@@ -58,29 +58,21 @@ Notes:
 
 ## What the project produces
 
-### Output 1: 311 storytelling app (`app/`)
+### Output 1: 311 storytelling app
 
 A scroll-driven story built from 311 service-request data for the Allen Street Mall area. It should read like 311 Wrapped: one idea per screen, a headline number, a chart, and a plain-language takeaway.
 
 Requirements:
 - Narrative structure, not a dashboard. Each section makes one point and leads to the next (for example: what residents report most, when, how fast the city responds, and what changes if a cultural anchor is added).
-- Every number on screen traces back to a file in `data/` and a script in `scripts/`.
+- Every number on screen traces back to a documented source.
 - Charts follow one visual system, with color used semantically (for example, baseline vs. proposal).
 - Responsive from 320px to 1920px wide, with no horizontal overflow. Keyboard accessible. Respects `prefers-reduced-motion`.
-- Static-first: the built app reads pre-computed JSON from `data/processed/`. It should not query raw 311 data at page load.
-- Shows model outputs from `notebooks/` as the proposal-vs-baseline section.
+- Static-first: the built app reads pre-computed data. It should not query raw 311 data at page load.
+- Shows the model outputs as the proposal-vs-baseline section.
 
-### Output 2: Model notebooks (`notebooks/`)
+### Output 2: Model
 
-A numbered series of Jupyter notebooks. Each notebook reads from `data/` and writes to `data/processed/`.
-
-| Notebook | Purpose |
-|---|---|
-| `01_311_ingest_and_clean.ipynb` | Load 311 extracts, normalize categories and dates, filter to the study area |
-| `02_baseline_food_trucks.ipynb` | Baseline scenario: food truck revenue, fees, and foot-traffic proxies |
-| `03_proposal_cultural_arts_center.ipynb` | Proposal scenario: Cultural Arts Center (museum) revenue, fees, and visitor assumptions |
-| `04_incrementality_model.ipynb` | Proposal minus baseline on social capital, cultural capital, and revenue, with revenue compared to food truck revenue |
-| `05_sensitivity_and_export.ipynb` | Sensitivity ranges, then export of story-ready JSON to `data/processed/` |
+A Jupyter-based model that compares the two scenarios and produces the figures the story uses.
 
 Model logic:
 - **Baseline** = status quo food truck concession.
@@ -88,56 +80,22 @@ Model logic:
 - **Incremental value** = Proposal − Baseline, per year over the 25-year term.
 - Metrics:
   - **Revenue**: gross receipts and Parks fees. Benchmarked against the food truck revenue baseline and the comparables above.
-  - **Social capital**: proxies to be defined in notebook 04 (for example, 311 civic-engagement and neighbor-reported signals before and after). Document each proxy and its source.
-  - **Cultural capital**: proxies to be defined in notebook 04 (for example, cultural program and venue activity). Document each proxy and its source.
-- Every assumption sits in one config cell at the top of each notebook, with its source cited.
-
----
-
-## Repository structure
-
-```
-lescc-hackathon/
-├── README.md
-├── data/
-│   ├── raw/                 # Source files as received, never edited
-│   │   ├── 311/             # 311 service-request extracts
-│   │   ├── parks/           # Solicitation M4-SB-2026 and financial benchmark tables
-│   │   └── food-trucks/     # Food truck revenue and permit data (baseline)
-│   └── processed/           # Cleaned tables and story-ready JSON read by the app
-├── scripts/                 # Reusable Python: fetch, clean, compute metrics
-│   ├── fetch_311.py
-│   ├── clean_311.py
-│   └── export_story_json.py
-├── notebooks/               # Jupyter model series (01–05 above)
-└── app/                     # Storytelling front end (reads data/processed/ only)
-```
-
-Folder rules:
-- `data/raw/` is read-only. Scripts and notebooks write only to `data/processed/`.
-- `scripts/` holds logic that runs outside a notebook. Notebooks import from it rather than duplicating it.
-- `app/` never reads `data/raw/`. Its inputs are the JSON files exported by notebook 05.
+  - **Social capital**: proxies to be defined before any result is shown in the app (for example, 311 civic-engagement and neighbor-reported signals before and after). Document each proxy and its source.
+  - **Cultural capital**: proxies to be defined before any result is shown in the app (for example, cultural program and venue activity). Document each proxy and its source.
+- Every assumption is stated in one place, with its source cited.
 
 ---
 
 ## Open questions and data gaps
 
-- **Food truck revenue is not in the packet.** The Parks tables cover cafés and a parkhouse. A food truck baseline needs its own source (vendor receipts, permit records, or published estimates). Until one is found, the baseline in notebook 02 is an explicit assumption.
-- **Social and cultural capital are not measured in the packet.** Notebook 04 must define proxies before any result is shown in the app.
+- **Food truck revenue is not in the packet.** The Parks tables cover cafés and a parkhouse. A food truck baseline needs its own source (vendor receipts, permit records, or published estimates). Until one is found, the baseline is an explicit assumption.
+- **Social and cultural capital are not measured in the packet.** Proxies must be defined before any result is shown in the app.
 - **Museum visitor and revenue assumptions** have no source yet.
-- **Study-area boundary** for Allen Street Mall needs to be fixed (set of 311 geographies or radius) before notebook 01 runs.
+- **Study-area boundary** for Allen Street Mall needs to be fixed (set of 311 geographies or radius) before analysis runs.
 - **Entity question** (new entity vs. DBA) affects who the model names as the operator. It is still open.
 
 ---
 
 ## Setup
 
-Not yet built. Planned:
-
-```bash
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt       # pandas, numpy, jupyter, matplotlib
-jupyter lab notebooks/
-```
-
-App commands will be added once `app/` is scaffolded.
+Not yet built. Setup steps will be added once the model and app are scaffolded.
