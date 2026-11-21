@@ -1,0 +1,4 @@
+spec,inner_jobs_2007,outer_jobs_2007,pre_growth_inner_pct,pre_growth_outer_pct,pre_gap_pct_pts,post_growth_inner_pct,post_growth_outer_pct,post_gap_pct_pts,diff_in_diff_pct_pts
+main: inner<=0.25mi vs 0.25-1mi,2311,44215,43.3,17.5,25.7,128.5,13.4,115.0,89.3
+sensitivity: drop blocks within 0.1mi of Whole Foods,2193,44215,45.0,17.5,27.5,103.6,13.4,90.2,62.7
+sensitivity: inner<=0.5mi vs 0.5-1mi,18240,28286,23.0,15.9,7.1,32.8,12.0,20.8,13.7

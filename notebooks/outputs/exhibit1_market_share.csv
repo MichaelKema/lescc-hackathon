@@ -1,0 +1,33 @@
+use,competitor_definition,beta,site_attract_vs_avg_competitor,n_competitors,site_share_pct,site_trips_per_yr
+cultural center,broad,1.0,1.0,891,0.12,6664
+cultural center,broad,1.0,2.0,891,0.24,13305
+cultural center,broad,1.5,1.0,891,0.11,6131
+cultural center,broad,1.5,2.0,891,0.22,12229
+cultural center,broad,2.0,1.0,891,0.09,5093
+cultural center,broad,2.0,2.0,891,0.18,10144
+cultural center,broad,2.5,1.0,891,0.07,3939
+cultural center,broad,2.5,2.0,891,0.14,7827
+cultural center,narrow,1.0,1.0,226,0.51,28168
+cultural center,narrow,1.0,2.0,226,1.02,55861
+cultural center,narrow,1.5,1.0,226,0.5,27307
+cultural center,narrow,1.5,2.0,226,0.98,53724
+cultural center,narrow,2.0,1.0,226,0.44,24437
+cultural center,narrow,2.0,2.0,226,0.86,47401
+cultural center,narrow,2.5,1.0,226,0.38,21014
+cultural center,narrow,2.5,2.0,226,0.73,39941
+food truck pavilion,broad,1.0,1.0,4968,0.03,18080
+food truck pavilion,broad,1.0,2.0,4968,0.06,36145
+food truck pavilion,broad,1.5,1.0,4968,0.03,20122
+food truck pavilion,broad,1.5,2.0,4968,0.07,40215
+food truck pavilion,broad,2.0,1.0,4968,0.03,20779
+food truck pavilion,broad,2.0,2.0,4968,0.07,41510
+food truck pavilion,broad,2.5,1.0,4968,0.03,20208
+food truck pavilion,broad,2.5,2.0,4968,0.07,40345
+food truck pavilion,narrow,1.0,1.0,1302,0.12,73635
+food truck pavilion,narrow,1.0,2.0,1302,0.25,147010
+food truck pavilion,narrow,1.5,1.0,1302,0.14,85105
+food truck pavilion,narrow,1.5,2.0,1302,0.29,169672
+food truck pavilion,narrow,2.0,1.0,1302,0.15,90398
+food truck pavilion,narrow,2.0,2.0,1302,0.3,179831
+food truck pavilion,narrow,2.5,1.0,1302,0.15,88912
+food truck pavilion,narrow,2.5,2.0,1302,0.3,176367
