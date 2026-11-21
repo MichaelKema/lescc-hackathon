@@ -1,0 +1,14 @@
+spec,inner_jobs_at_open,pre_inner_pct,pre_outer_pct,pre_gap,post_inner_pct,post_outer_pct,post_gap,diff_in_diff,anchor,open_year,pre,post
+main,2311,43.3,17.5,25.7,140.5,36.6,104.0,78.2,New Museum,2007.0,2002-2007,2019
+excl Whole Foods / Houston St Center,2193,45.0,17.5,27.5,119.4,36.6,82.8,55.3,New Museum,2007.0,2002-2007,2019
+inner<=0.5mi,18240,23.0,15.9,7.1,52.2,36.6,15.6,8.5,New Museum,2007.0,2002-2007,2019
+main,3852,5.4,8.7,-3.3,110.2,51.2,58.9,62.2,"University Settlement, Houston Street Center",2006.0,2002-2005,2019
+excl New Museum block,3684,4.0,8.7,-4.7,86.0,51.2,34.8,39.5,"University Settlement, Houston Street Center",2006.0,2002-2005,2019
+inner<=0.5mi,19237,10.7,7.2,3.4,71.5,46.2,25.3,21.8,"University Settlement, Houston Street Center",2006.0,2002-2005,2019
+main,3039,24.2,26.2,-2.0,57.6,15.8,41.8,43.8,Tenement Museum visitor center (103 Orchard),2011.0,2005-2010,2019
+excl Essex Crossing,2275,22.5,26.2,-3.6,34.9,15.8,19.1,22.7,Tenement Museum visitor center (103 Orchard),2011.0,2005-2010,2019
+post to 2017,3039,24.2,26.2,-2.0,59.7,20.2,39.5,41.5,Tenement Museum visitor center (103 Orchard),2011.0,2005-2010,2017
+inner<=0.5mi,13970,37.2,21.8,15.4,34.1,11.7,22.5,7.1,Tenement Museum visitor center (103 Orchard),2011.0,2005-2010,2019
+main,184,,,,64.1,119.7,-55.6,,Henry Street Settlement (265 Henry St / Abrons),,,2019
+excl Essex Crossing,184,,,,19.6,121.0,-101.4,,Henry Street Settlement (265 Henry St / Abrons),,,2019
+inner<=0.5mi,2334,,,,66.0,130.9,-64.9,,Henry Street Settlement (265 Henry St / Abrons),,,2019

@@ -1,0 +1,9 @@
+anchor,measure,open_year,inner_assessed_at_open_$M,post_inner_pct,post_outer_pct,post_gap,pre_inner_pct,pre_outer_pct,pre_gap,diff_in_diff
+New Museum,all lots,2007.0,697,176.8,137.3,39.5,96.1,48.3,47.8,-8.3
+New Museum,commercial lots,2007.0,352,288.2,171.9,116.3,109.5,55.7,53.9,62.5
+"University Settlement, Houston Street Center",all lots,2006.0,708,275.7,193.9,81.8,49.9,28.4,21.5,60.4
+"University Settlement, Houston Street Center",commercial lots,2006.0,379,390.1,241.3,148.8,62.7,37.3,25.3,123.4
+Tenement Museum visitor center (103 Orchard),all lots,2011.0,605,144.5,108.4,36.1,29.7,30.2,-0.5,36.6
+Tenement Museum visitor center (103 Orchard),commercial lots,2011.0,367,192.9,139.1,53.8,44.6,29.0,15.6,38.1
+Henry Street Settlement (265 Henry St / Abrons),all lots,,249,255.7,333.3,-77.6,,,,
+Henry Street Settlement (265 Henry St / Abrons),commercial lots,,33,446.5,523.9,-77.4,,,,
