@@ -55,6 +55,16 @@ Notes:
 
 Parks' published financials for the Hunter's Point South Café and McCarren Parkhouse are already in the project `README.md`. They are the only revenue comparables in the solicitation packet. They are café and parkhouse concessions, not food trucks.
 
+## 6. LESCC community bid and financial channels (team-authored, in `data/raw/`)
+
+- **Files:** `raw/lescc-community-bid.json` and `raw/lescc-financial-channels.json`
+- **Source:** written by the Lower East Side Cultural Center (LESCC) bid team, 2026-11-21. These are the team's proposal and plan, not third-party data.
+- **`lescc-community-bid.json`:** the bid concept (Community Value Capture), the four funding layers (merchant pledge fund, LES BID backstop, Park Improvement District pilot, economic rationale), the team and their roles, coalition expansion, the venue and programming, and a three-phase roadmap.
+- **`lescc-financial-channels.json`:** four ways to route revenue to Parks: a direct coalition fee guarantee, an LES BID backstop, a PID pilot, and a closed data loop for renewing pledges.
+- **Use:** the proposal scenario in the model (who pays the license fee and the 25% security deposit) and the "what changes" section of the story.
+- **Numbers still to be sourced:** 321 food and beverage vendors nearby (the Eateries feed in section 1 may confirm it); about 8,900 Chinese residents, 36% of households within a 5-minute walk (ACS tracts in section 4); 400+ LES BID members (LES BID).
+- **Metrics the bid proposes to track:** foot traffic, storefront vacancy, business openings and closings, and event attendance. These are candidates for the social and cultural capital proxies.
+
 ## Open items
 
 - Record the Socrata ID and pull date for each source once located.
