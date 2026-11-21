@@ -1,0 +1,60 @@
+/* Design tokens taken from lesculturalcenter.org's stylesheet (Tailwind v4 build).
+   Keep in sync with the LESCC site. Do not hardcode these values elsewhere. */
+
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-zinc-50: #fafafa;
+  --color-zinc-100: #f4f4f5;
+  --color-zinc-200: #e4e4e7;
+  --color-zinc-400: #9f9fa9;
+  --color-zinc-500: #71717b;
+  --color-zinc-600: #52525c;
+  --color-zinc-800: #27272a;
+  --color-zinc-900: #18181b;
+  --color-zinc-950: #09090b;
+  --color-red-400: #ff6568;
+  --color-red-600: #e40014;
+  --color-green-600: #068e4a;
+
+  --bg: var(--color-white);
+  --fg: #171717;
+  --muted: var(--color-zinc-500);
+  --accent: var(--color-red-600);
+  --accent-soft: var(--color-red-400);
+  --positive: var(--color-green-600);
+  --surface: var(--color-zinc-100);
+  --border: var(--color-zinc-200);
+
+  /* Semantic colors for the story. Baseline and proposal must never share a hue. */
+  --color-baseline: var(--color-zinc-500);
+  --color-proposal: var(--accent);
+
+  --font-sans: "Lato", "Lato Fallback", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+
+  --radius: 0.5rem;
+  --gutter: 16px;
+  --max-width: 80rem;
+
+  --duration-fast: 150ms;
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0a0a0a;
+    --fg: #ededed;
+    --muted: var(--color-zinc-400);
+    --surface: var(--color-zinc-900);
+    --border: var(--color-zinc-800);
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #0a0a0a;
+  --fg: #ededed;
+  --muted: var(--color-zinc-400);
+  --surface: var(--color-zinc-900);
+  --border: var(--color-zinc-800);
+}
