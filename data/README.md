@@ -62,7 +62,7 @@ Parks' published financials for the Hunter's Point South Café and McCarren Park
 - **`lescc-community-bid.json`:** the bid concept (Community Value Capture), the four funding layers (merchant pledge fund, LES BID backstop, Park Improvement District pilot, economic rationale), the team and their roles, coalition expansion, the venue and programming, and a three-phase roadmap.
 - **`lescc-financial-channels.json`:** four ways to route revenue to Parks: a direct coalition fee guarantee, an LES BID backstop, a PID pilot, and a closed data loop for renewing pledges.
 - **Use:** the proposal scenario in the model (who pays the license fee and the 25% security deposit) and the "what changes" section of the story.
-- **Numbers still to be sourced:** 321 food and beverage vendors nearby (the Eateries feed in section 1 may confirm it); about 8,900 Chinese residents, 36% of households within a 5-minute walk (ACS tracts in section 4); 400+ LES BID members (LES BID).
+- **Numbers still to be sourced:** 321 food and beverage vendors nearby (the Eateries feed in section 1 may confirm it); about 8,900 Chinese residents, 36% of households within a 5-minute walk (ACS tracts in section 4); 400+ LES BID members (LES BID); about 40 frontage property owners on the block and 6 coffee shops within 130 m (both from the longer README in `raw/`).
 - **Metrics the bid proposes to track:** foot traffic, storefront vacancy, business openings and closings, and event attendance. These are candidates for the social and cultural capital proxies.
 
 ## Open items
